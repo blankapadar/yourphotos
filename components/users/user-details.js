@@ -20,11 +20,11 @@ function UserDetails(props) {
           height={350}
         />
       </div>
-      <div className="justify-self-start">
-        <h4 className="text-h4-gray uppercase mb-6 text-xl tracking-wider">
+      <div className="justify-self-center md:justify-self-start md:text-left text-center">
+        <h4 className="text-h4-gray uppercase mb-6 md:mt-0 mt-8 text-xl tracking-wider">
           About me
         </h4>
-        <h2 className="text-white uppercase mb-3 text-4xl tracking-wider">
+        <h2 className="text-white uppercase mb-3 text-xxl md:text-4xl tracking-wider">
           {props.user.name}
         </h2>
         <p className="text-white  text-sm max-w-lg">
@@ -46,7 +46,7 @@ function UserDetails(props) {
         </Link>
         <button
           onClick={followHandler}
-          className="bg-white px-14 py-3 uppercase text-base tracking-wider block"
+          className="bg-white px-14 py-3 uppercase text-base tracking-wider block md:m-0 m-auto"
         >
           {!follow ? "Follow" : "UnFollow"}
         </button>

@@ -1,10 +1,11 @@
-const EXTERNAL_DATA_URL = "https://yourphotos/users";
+const EXTERNAL_DATA_URL = "https://yourphotos-gamma-vercel.app/users";
+const URL = "https://jsonplaceholder.typicode.com/users";
 
 function generateSiteMap(users) {
   return `<?xml version="1.0" encoding="UTF-8"?>
    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
      <url>
-       <loc>https://yourphotos.com</loc>
+       <loc>https://yourphotos-gamma-vercel.app</loc>
      </url>
      ${users
        .map(({ id }) => {
@@ -22,7 +23,7 @@ function generateSiteMap(users) {
 function SiteMap() {}
 
 export async function getServerSideProps({ res }) {
-  const request = await fetch(EXTERNAL_DATA_URL);
+  const request = await fetch(URL);
   const users = await request.json();
 
   const sitemap = generateSiteMap(users);
