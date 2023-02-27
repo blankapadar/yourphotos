@@ -8,9 +8,9 @@ function Users(props) {
         <div key={user.id}>
           <Link href={`/users/${user.id}`}>
             <Image
-              className="m-auto"
+              className="m-auto transition ease-in-out hover:-translate-y-1 hover:scale-110 "
               src="/images/placeholder-img.jpg"
-              alt="Picture of the author"
+              alt="user avatar"
               width={120}
               height={120}
             />

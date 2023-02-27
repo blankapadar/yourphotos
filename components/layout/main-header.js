@@ -19,7 +19,7 @@ function MainHeader() {
           <Image
             className="rounded-full mr-8 "
             src="/images/placeholder-img.jpg"
-            alt="Avatar of the user"
+            alt="User avatar"
             width={50}
             height={50}
           />

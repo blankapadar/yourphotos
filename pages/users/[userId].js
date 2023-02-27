@@ -6,7 +6,8 @@ function UserPage({ user, photos }) {
   return (
     <>
       <Head>
-        <title>Profile</title>
+        <title>{user.name}</title>
+        <meta name="description" content="user portfolio page" />
         <link rel="icon" href="yourphotos-logo-black.svg" />
       </Head>
       <UserDetails user={user} />

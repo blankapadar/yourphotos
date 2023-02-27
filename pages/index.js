@@ -6,6 +6,7 @@ function HomePage({ users }) {
     <>
       <Head>
         <title>Your Photos</title>
+        <meta name="description" content="homepage showing all the users" />
         <link rel="icon" href="yourphotos-logo-black.svg" />
       </Head>
       <h1 className="text-white uppercase text-center text-m tracking-wider mt-10">

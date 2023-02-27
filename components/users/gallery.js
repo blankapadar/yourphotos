@@ -12,7 +12,7 @@ function Gallery(props) {
             <Image
               key={Math.random()}
               src={photo.url}
-              alt="picture"
+              alt="user avatar"
               width={400}
               height={400}
             />

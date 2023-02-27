@@ -7,7 +7,7 @@ function UserDetails(props) {
 
   function followHandler() {
     setFollow(!follow);
-    follow ? console.log("Followed") : console.log("Unfollowed");
+    follow ? console.log("UnFollowed") : console.log("Followed");
   }
 
   return (
@@ -18,6 +18,7 @@ function UserDetails(props) {
           alt="Picture of the author"
           width={350}
           height={350}
+          priority
         />
       </div>
       <div className="justify-self-center md:justify-self-start md:text-left text-center">
